@@ -5,8 +5,8 @@
 ## VCS
 - Version Control System (VCS) is a software that helps software developers to work together and maintain a complete history of their work.
 - Types of VCS :
-1. Centralized version control system (CVCS)
-2. Distributed/Decentralized version control system (DVCS)
+1. Centralized version control system (CVCS).
+2. Distributed/Decentralized version control system (DVCS).
 
 ![CVCS vs DVCS](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190820174942/CVCS-vs-DVCS.png)
 
