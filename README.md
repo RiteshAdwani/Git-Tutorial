@@ -21,10 +21,10 @@
 
 - If you are using Debian base GNU/Linux distribution, then apt-get command will do the needful.
 
-`sudo apt-get install git-core`
+`sudo apt-get install git-core` \
 password for ubuntu:
 
-`git --version`
+`git --version` \
 git version 1.8.1.2
 
 ## Git Environment Setup
@@ -82,15 +82,15 @@ git version 1.8.1.2
 
 **Fast forward**
 
-A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. 
-Instead of actually merging the branches, all Git has to do to integrate the histories is move the current branch tip up to the target branch tip.
+A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch. \
+Instead of actually merging the branches, all Git has to do to integrate the histories is move the current branch tip up to the target branch tip. \
 ![fast-forward](https://wac-cdn.atlassian.com/dam/jcr:d90f2536-7951-4e5e-ab79-f45a502fb4c8/03-04%20Fast%20forward%20merge.svg?cdnVersion=797)
 
 **Three way merge**
 
-When there is not a linear path to the target branch, Git has no choice but to combine them via a 3-way merge. 
-3-way merges use a dedicated commit to tie together the two histories. 
-The nomenclature comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common ancestor.
+When there is not a linear path to the target branch, Git has no choice but to combine them via a 3-way merge. \
+3-way merges use a dedicated commit to tie together the two histories. \
+The nomenclature comes from the fact that Git uses three commits to generate the merge commit: the two branch tips and their common ancestor.\
 
 ![3-way](https://wac-cdn.atlassian.com/dam/jcr:91aece4a-8fa0-4fc3-bae9-69d51932f104/05-06%20Fast%20forward%20merge.svg?cdnVersion=797)
 
@@ -179,18 +179,21 @@ The nomenclature comes from the fact that Git uses three commits to generate the
 - The git reset command has three core forms of invocation. These forms are as follows.
 
 1.*Hard:*
-When passed --hard The Commit History ref pointers are updated to the specified commit. Then, the Staging Index and Working Directory are reset to match that of the specified commit. 
-This means any pending work that was hanging out in the Staging Index and Working Directory will be lost.
+When passed --hard The Commit History ref pointers are updated to the specified commit. Then, the Staging Index and Working Directory are reset to match that of the specified commit. \
+This means any pending work that was hanging out in the Staging Index and Working Directory will be lost.\
 
 `git reset --hard`
 
 2.*Mixed:*
-This is the default operating mode. The ref pointers are updated. The Staging Index is reset to the state of the specified commit. Any changes that have been undone from the Staging Index are moved to the Working Directory. 
+This is the default operating mode. The ref pointers are updated. \
+The Staging Index is reset to the state of the specified commit. \
+Any changes that have been undone from the Staging Index are moved to the Working Directory. 
 
 `git reset --mixed`
 
 3.*Soft:*
-When the --soft argument is passed, the ref pointers are updated and the reset stops there. The Staging Index and the Working Directory are left untouched.
+When the --soft argument is passed, the ref pointers are updated and the reset stops there. \
+The Staging Index and the Working Directory are left untouched.
 
 `git reset --soft`
 
